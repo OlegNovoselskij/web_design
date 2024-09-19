@@ -1,0 +1,140 @@
+.section_3 {
+    width: 80%;
+    height: 720px;
+    left: 4%;
+    /* background-color: #F063B826; */
+    position: relative;
+    margin-bottom: 10%;
+}
+
+.section_3 h2 {
+    width: 100%;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 300%;
+    line-height: 100%;
+    margin-left: 49%;
+    /* position: absolute; */
+    
+}
+
+.section_3 p {
+    width: 40%;
+    /* height: 100%; */
+    font-family: avenir;
+    font-size: 100%;
+    line-height: 30px;
+    color: #4B5D68;
+    text-align: center;
+    top: 13%;
+    left: 38%;
+    margin-left: 34%;
+    /* position: absolute; */
+}
+
+.main_3 {
+    width: 100%;
+    /* background-color: aqua; */
+    height: 89%;
+    position: relative;
+    /* left: 2%;
+    top: 35%; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 30px;
+    margin-left: 5%;
+}
+
+.main_3 div {
+    /* background-color: whitesmoke; */
+}
+
+.title_1 {
+    position: relative;
+    background-image: url(../images/fhone_1.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50px;
+}
+
+.title_1 h3 {
+    /* position: absolute; */
+    width: 100%;
+    height: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 150%;
+    line-height: 110%;
+    color: #212353;
+    left: 43.5%;
+    margin-left: 43%;
+    top: 4%;
+    z-index: 1;
+}
+
+.title_1 p {
+    /* position: absolute; */
+    width: 40%;
+    /* height: 100%; */
+    font-family: avenir;
+    font-size: 100%;
+    line-height: 26px;
+    color: #4B5D68;
+    text-align: left;
+    left: 44%;
+    margin-left: 43%;
+    top: 22%;
+    z-index: 1;
+}
+
+.title_1_img  {
+    z-index: 1;
+    height: 70%;
+    position: absolute;
+    left: 5%;
+    top: 17%;
+    width: 35%;
+}
+
+.title_1 a {
+    /* position: absolute; */
+    margin-left: 43%;
+    bottom: 10%;
+    left: 44%;
+    color: #212353;
+    text-decoration: none;
+    font-family: avenir;
+    font-size: 120%;
+}
+
+.arrow {
+    /* position: absolute; */
+    bottom: 11.4%;
+    right: 34%;
+    margin-top: 2%;
+}
+
+
+.title_2 {
+    position: relative;
+    background-image: url(../images/fhone_2.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50px;
+}
+
+.title_3 {
+    position: relative;
+    background-image: url(../images/fhone_3.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50px;
+}
+
+.title_4 {
+    position: relative;
+    background-image: url(../images/fhone_4.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 50px;
+}
