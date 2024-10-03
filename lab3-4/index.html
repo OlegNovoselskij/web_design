@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars CRUD App</title>
+</head>
+<body>
+  <div style="max-width: 800px; margin: 0 auto; padding: 20px; background-color: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1);">
+    <h1 style="font-size: 2rem; font-weight: bold; text-align: center; margin-bottom: 20px;">Cars List</h1>
+
+    <div style="display: flex; justify-content: flex-end; margin-bottom: 20px;">
+      <button id="create-car-btn" style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px;">Add Car</button>
+    </div>
+
+    <div style="display: flex; justify-content: space-between; margin-bottom: 20px;">
+      <input type="text" id="search-input" placeholder="Search by model..." style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; flex: 1; max-width: 300px;">
+      
+      <div style="display: flex; align-items: center;">
+        <select id="sort-options" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; margin-left: 10px;">
+          <option value="rating">Sort by Rating</option>
+          <option value="year">Sort by Year</option>
+        </select>
+        <button id="sort-btn" style="background-color: green; color: white; padding: 10px; border-radius: 5px; margin-left: 10px;">Sort</button>
+      </div>
+    </div>
+
+    <ul id="cars-list" style="list-style-type: none; padding: 0;"></ul>
+
+    <p style="margin-top: 20px; font-size: 1.25rem; font-weight: bold;">Total Cars Rating: <span id="total-rating">0</span></p>
+  </div>
+
+  <div id="form-modal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.5); flex-direction: column; align-items: center; justify-content: center;">
+    <div style="background-color: white; padding: 20px; border-radius: 10px; max-width: 400px; width: 100%;">
+      <h1 id="form-title" style="font-size: 1.5rem; font-weight: bold; text-align: center; margin-bottom: 20px;">Add Car</h1>
+
+      <form id="car-form" style="display: flex; flex-direction: column; gap: 10px;">
+        <div>
+          <label for="model" style="font-weight: bold;">Car Model:</label>
+          <input type="text" id="model" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+        </div>
+
+        <div>
+          <label for="rating" style="font-weight: bold;">Car Rating:</label>
+          <input type="number" id="rating" step="0.1" min="0" max="10" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+        </div>
+
+        <div>
+          <label for="year" style="font-weight: bold;">Year of Manufacture:</label>
+          <input type="number" id="year" required min="1886" style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+        </div>
+
+        <div>
+          <label for="image" style="font-weight: bold;">Image URL:</label>
+          <input type="url" id="image" required style="border: 1px solid #ccc; border-radius: 5px; padding: 10px; width: 100%;">
+        </div>
+
+        <div style="display: flex; justify-content: flex-end; gap: 10px;">
+          <button id="submit" style="background-color: blue; color: white; padding: 10px 20px; border-radius: 5px;">Save Car</button>
+          <button type="button" id="cancel-form-btn" style="background-color: gray; color: white; padding: 10px 20px; border-radius: 5px;">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
